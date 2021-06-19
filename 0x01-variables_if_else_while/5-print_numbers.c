@@ -8,11 +8,11 @@
 
 int main(void)
 {
-int n;
-while (n < 10);
+int number;
+while (number < 10)
 {
-printf("%d", n);
-n += 1;
+printf("%d", number);
+number++;
 }
 printf("\n");
 return (0);
