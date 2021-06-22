@@ -13,7 +13,7 @@ char str_hbt[9] = "Holberton";
 
 while (n < 9)
 {
-_putchar(str_htb[n]);
+_putchar(str_hbt[n]);
 n += 1;
 }
 _putchar('\n');
