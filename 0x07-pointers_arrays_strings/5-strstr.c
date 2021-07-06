@@ -4,7 +4,7 @@
 /**
  * _strstr - function that locates a substring.
  * @haystack: initial string
- * @needle: substrin
+ * @needle: substring
  * Return: char
  */
 
@@ -18,8 +18,8 @@ res = haystack;
 aux = needle;
 while (*aux == *haystack && *aux != '\0' && *haystack != '\0')
 {
-haystack++
-aux++
+haystack++;
+aux++;
 }
 if (*aux == '\0')
 return (res);
