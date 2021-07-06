@@ -16,7 +16,7 @@ int sum, sum2;
 sum = sum2 = 0;
 while (i < (size * size))
 {
-value = *(a +1);
+value = *(a + i);
 sum = sum + value;
 i = i + size + 1;
 }
