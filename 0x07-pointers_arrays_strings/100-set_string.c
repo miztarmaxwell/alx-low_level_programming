@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "fractol.h"
+
 voidput_rect(t_shape *shape, t_rect *rect)
 {
 int x;
@@ -47,13 +48,9 @@ if (shape->string.burn == 0)
 ft_change_string(shape, &rect, 70);
 if (shape->string.tri == 0)
 ft_change_string(shape, &rect, 100);
-mlx_string_put(shape->mlx, shape->win, 10, 10,
-shape->string.mand, "Mandelbrot");
-mlx_string_put(shape->mlx, shape->win, 10, 40,
-shape->string.julia, "Julia");
-mlx_string_put(shape->mlx, shape->win, 10, 70,
-shape->string.burn, "BurningShip");
-mlx_string_put(shape->mlx, shape->win, 10, 100,
-shape->string.tri, "Tricorn");
+mlx_string_put(shape->mlx, shape->win, 10, 10, shape->string.mand, "Mandelbrot");
+mlx_string_put(shape->mlx, shape->win, 10, 40, shape->string.julia, "Julia");
+mlx_string_put(shape->mlx, shape->win, 10, 70, shape->string.burn, "BurningShip");
+mlx_string_put(shape->mlx, shape->win, 10, 100, shape->string.tri, "Tricorn");
 mlx_string_put(shape->mlx, shape->win, 690, 570, RED, "\"h\" : Help");
 }
