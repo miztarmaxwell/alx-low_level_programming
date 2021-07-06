@@ -2,6 +2,7 @@
 
 /**
  * _memcpy - function that copies memory area.
+ *
  * @dest: dest positions
  * @scr: source position
  * @n: size of bytes
@@ -14,7 +15,7 @@ unsigned int i = 0;
 unsigned int j = 0;
 while (i < n)
 {
-*(dest + 1) = *(src + j);
+*(dest + i) = *(src + j);
 i += 1;
 j += 1;
 }
