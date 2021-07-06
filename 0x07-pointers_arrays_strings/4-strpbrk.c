@@ -3,6 +3,7 @@
 
 /**
  * _strpbrk - function that searches a string for any of a set of bytes.
+ *
  * @s: string to receive
  * @accept: byte to accept
  * Return: char
@@ -19,7 +20,7 @@ while (*(accept + j) != '\0')
 {
 if (*s == *(accept + j))
 flag = 1;
-J++;
+j++;
 }
 j = 0;
 if (flag == 1)
